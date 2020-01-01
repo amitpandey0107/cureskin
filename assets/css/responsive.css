@@ -1,0 +1,122 @@
+@media only screen and  (min-width: 1200px) {
+	
+}
+
+@media only screen and (max-width: 991px) {
+	.bannerContent h1 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+	.playStoreWrap img {
+		width: 135px;
+		height: auto;
+	}
+	.playStoreWrap a {
+		margin-right: 10px;
+	}
+	.bannerInfoText{ 
+		width: 100%;
+	}
+	.appWorks .appImage img {
+		width: 100%;
+		height: 575px;
+		display: inline-block;
+		object-fit: cover;
+		object-position: top;
+	}
+	.appContent h2{
+		font-size: 36px;
+		line-height: 19px;
+		margin-bottom: 20px;
+	}
+	.steps {
+		padding: 10px 0;
+	}
+	.appContent {
+		padding-top: 40px;
+	}
+	.onesolution .solutionInfo h2 {
+		font-size: 32px;
+		line-height: 39px;
+	}
+	.oneSolImageWrap .mainImage img {
+		height: 500px;
+	}
+	.oneSolImageWrap .mainImage {
+		margin-top: -90px;
+	}
+	.skin{
+		height: 90px;
+		width: 90px;
+		line-height: 90px;
+	}
+	.hair {
+		height: 110px;
+		width: 110px;
+		line-height: 110px;
+		top: -86px;
+    	right: -68px;
+	}
+	.circle1 {
+		right: 0;
+	}
+	.bodycircle{
+		top: 72px;
+		left: -58px;
+	}
+	.circle2 {
+		left: -40px;
+	}
+	.messageContent .messageTitle {
+		font-size: 32px;
+		line-height: 39px;
+		margin-bottom: 20px;
+	}
+	.message .ownerImage img {
+		height: 500px;
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+	.messageContent .messageText{
+		font-size: 18px;
+		line-height: initial;
+	}
+	.statistics .statsHeading {
+		font-size: 40px;
+		line-height: 40px;
+	}.happyfaces {
+		position: relative;
+		padding: 70px 0 60px 0;
+	}
+	.happyfaces .happybox h3 {
+		font-size: 24px;
+	}
+	.happyfaces .happybox .happycontent {		
+		font-size: 17px;
+		padding: 0;
+	}
+	.videos .vbox h3 {
+		font-size: 19px;
+		line-height: 29px;
+	}
+	.downloadappnow {
+		font-size: 13px;
+		padding: 10px 10px;
+	}
+	.iconbox {
+		margin-bottom: 30px;
+	}
+		
+	
+}
+
+
+@media only screen and (max-width: 771px) {	
+	
+}
+
+
+@media only screen and (max-width: 551px) {
+	
+}
