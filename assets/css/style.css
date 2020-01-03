@@ -146,15 +146,15 @@ HOME BANNER
 }
 .bannerContent{
     font-family: 'Noto Sans', sans-serif;
-    padding-top: 120px;
+    padding-top: 80px;
     width: 100%;
 }
 .bannerContent h1 {
     font-weight: 300;
     color: #101010;
     text-transform: capitalize;
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 41px;
+    line-height: 53px;
     margin-bottom: 30px;
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -162,12 +162,29 @@ HOME BANNER
     font-size: 20px;
     color: #5A5959;
     margin-bottom: 40px;
-    width: 87%;
     font-family: 'Red Hat Display', sans-serif;
 }
 .playStoreWrap{
     position: relative;
 }
+.infoText ul{
+    padding-top: 15px;
+}
+.infoText ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+}
+.infoText ul li:before {
+    content: '';
+    height: 2px;
+    width: 9px;
+    background-color: #333;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+}
+
 .playStoreWrap a{
     text-decoration: none;
     display: inline-block;
@@ -186,7 +203,7 @@ HOME BANNER
     border-radius: 25px;
     text-align: center;
     height: 45px;
-    width: 250px;
+    min-width: 250px;
     padding: 15px 25px;
     line-height: 12px;
     transition: all 0.5s ease-in-out;
@@ -231,7 +248,7 @@ HOW OUR APP WORKS
     display: inline-block;
 }
 .appContent {
-    padding-top: 100px;
+    padding-top: 23px;
 }
 .appContent h2{
     font-weight: 300;
@@ -297,6 +314,10 @@ HOW OUR APP WORKS
 /* ==================
 ONE STOP SOLUTION 
 =====================*/
+.solutionInfo {
+    margin-top: -100px;
+}
+
 .onesolution {
     position: relative;
     padding: 60px 0 60px 0;
@@ -305,6 +326,7 @@ ONE STOP SOLUTION
     background-position: top;
     background-size: cover;
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 .onesolution .solutionInfo h2 {
     margin-bottom: 30px;
@@ -318,6 +340,7 @@ ONE STOP SOLUTION
     font-size: 19px;
     margin-bottom: 30px;
     font-family: 'Red Hat Display', sans-serif;
+    padding-right: 60px;
 }
 .knowMoreBtn{
     background-color: #5EAC73;
@@ -456,8 +479,8 @@ MESSAGE FROM OWNER
     font-weight: 300;
     color: #101010;
     text-transform: capitalize;
-    font-size: 50px;
-    line-height: 65px;
+    font-size: 44px;
+    line-height: 58px;
     font-family: 'Red Hat Display', sans-serif;
 }
 .messageContent .messageTitle:before {
@@ -525,14 +548,22 @@ HAPPY FACES
 }
 .happyfaces .happytitle {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     font-size: 50px;
     font-weight: 300;
     font-family: 'Red Hat Display', sans-serif;
     color: #293169;
 }
+.happyfaces .supportText {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: #5A5959;
+    font-family: 'Red Hat Display', sans-serif;
+}
 .happyfaces .happybox {
     min-height: 500px;
+    height: 100%;
     box-shadow: 0px 4px 8px -2px rgba(0,0,0,0.3);
     padding: 20px 20px 20px 20px;
     background-image: url('../img/Path82@2x.png');
@@ -564,14 +595,14 @@ HAPPY FACES
     margin-top: 24px;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 35px;
+    font-size: 24px;
 }
 .happyfaces .happybox .happycontent {
     color: #5A5959;
-    font-size: 19px;
+    font-size: 17px;
     margin-top: 20px;
     text-align: center;
-    padding: 0 18px 15px 18px;
+    padding: 0 10px 15px 10px;
     font-family: 'Red Hat Display', sans-serif;
 }
 .happyWrap:hover > .effect {
@@ -605,6 +636,14 @@ HAPPY FACES
     z-index: 9;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
+}
+.flexrow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flexcol{
+
 }
 
 /* ==================
@@ -1014,4 +1053,41 @@ SINGLE BLOG PAGE
 }
 .marginBottomv2 {
     margin-bottom: 80px;
+}
+
+
+
+/* ====================
+FAQ
+======================= */
+.faqwrap{
+    position: relative;
+    padding: 70px 0;
+}
+.faqwrap .faqsidebar{}
+.faqwrap .faqsidebar .sidebox {
+    background-color: #FFFFFF;
+    margin-bottom: 35px;
+    padding: 15px;
+    box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.3);
+    min-height: 195px;
+    max-height: 195px;
+}
+.faqwrap .faqsidebar .sidebox h4{
+    color:#283665;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.faqwrap .faqsidebar .sidebox .sidetext{
+    color:#5A5A5A;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+.faqwrap .faqmaincontent {
+    min-height: 1115px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.3);
 }
