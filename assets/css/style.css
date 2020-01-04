@@ -1088,6 +1088,76 @@ FAQ
 .faqwrap .faqmaincontent {
     min-height: 1115px;
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 25px 40px 25px 25px;
     box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.3);
+}
+.searchbar {
+    position: relative;
+    margin-bottom: 30px;
+}
+.searchbar input {
+    border:1px solid #C3C3C3;
+    width: 100%;
+    height: 45px;
+    color: #C3C3C3;
+    padding: 0 35px 0 15px;
+}
+.searchbar span.fa {
+    position: absolute;
+    color: #c3c3c3;
+    font-size: 22px;
+    right: 10px;
+    top: 9px;
+}
+.fbox {
+    margin-bottom: 35px;
+}
+.fbox h3 {
+    color: #283665;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.fbox .panel-default {
+    border: none;
+}
+.fbox .panel-default>.panel-heading {
+    color: #585858;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    border-bottom: 1px solid #C6C6C6;
+    box-shadow: none;
+    padding: 0;
+}
+.fbox .panel-default .panel-title a{
+    text-decoration: none;
+    display: block;
+    padding: 14px 15px 14px 0;
+}
+.fbox .panel-default .panel-title a:hover{
+    text-decoration: none;
+}
+.fbox .more-less {
+    color: #585858;
+    font-size: 10px;
+    border: 1px solid #585858;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    line-height: 16px;
+    float: right;
+}
+.fbox .panel-default .panel-body {
+    color: #585858;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    border: 0;
+    box-shadow: 0;
 }
