@@ -1,7 +1,24 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
+
+	// Toggle Main Menu for Mobile View
+	jQuery('#mobileicon').on('click tap', function() {
+		jQuery('.menuWrapper').show(0); 
+	    setTimeout(function(){ 
+	    	jQuery('body').addClass('bodyoverlay');
+	    },0);
+	    
+	});
+
+	jQuery('#mobilecross').on('click tap', function() {
+		jQuery('.menuWrapper').hide(0); 
+		setTimeout(function(){ 
+	    	jQuery('body').removeClass('bodyoverlay');
+	    },0);
+	});
+
 
 	// Product Slider
-	$('#featuredlogo').owlCarousel({
+	jQuery('#featuredlogo').owlCarousel({
 	    loop:true,
 	    margin:10,
 	    nav:true,
@@ -18,13 +35,6 @@ $(document).ready(function() {
 	    }
 	})
 
-	// Toogle Menu
-	$('#menu_icon').on('click', function() {
-		$('.top_navigation').slideToggle();		
-	})
-	$('.top_navigation > .main_menu > li.has_child_menu').append('<i class="fa fa-angle-right dropdown_icon"></i>');
-	$('.top_navigation > .main_menu > li.has_child_menu i.dropdown_icon').on('click', function() {
-		$(this).prev().toggle();
-       	$(this).toggleClass('fa-angle-up fa-angle-right');
-	})
+
+
 })

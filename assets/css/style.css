@@ -50,7 +50,7 @@ section,
 img,
 aside,
 header,
-footer {
+footer, button {
     padding: 0;
     margin: 0;
     transition: all 0.5s ease-in-out;
@@ -78,7 +78,9 @@ HEADER
     position: relative;
     padding: 40px 0;
 }
-.siteLogo{}
+.siteLogo{
+    display: inline-block;
+}
 .siteLogo img {
     height: 40px;
 }
@@ -136,7 +138,40 @@ HEADER
     border-color: #2C2A6D;
     transition: all 0.5s ease-in-out;
 }
-
+.mobileMenu{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    padding: 4px 6px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+.mobileMenu span {
+    height: 3px;
+    background-color: #000000;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+}
+.sidelogo{
+    display: none;
+}
+.crossbtn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ccc;
+}
+.crossbtn:hover {
+    color: #333333;
+}
+.crossbtn i.fa {
+    font-size: 24px;
+}
 
 /* ================
 HOME BANNER
@@ -1160,4 +1195,34 @@ FAQ
     font-weight: 300;
     border: 0;
     box-shadow: 0;
+}
+
+.menuWrapper{
+    position: relative;
+    text-align: right;
+    display: block;
+}
+.bodyoverlay {
+    /*background-color: rgba(0,0,0,0.45);*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.crossbtn{
+    display: none;
+}
+.bodyoverlay:after {
+    content: '';
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
