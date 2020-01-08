@@ -10,7 +10,6 @@
     <meta name="author" content="Cureskin">
     <title>Cureskin</title>
 
-
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
@@ -40,11 +39,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/OwlCarousel2/dist/owl.carousel.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    
 
 </head>
 
@@ -57,23 +60,34 @@
     <header class="siteHeader">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="siteLogo">
                         <a href="index.html">
                             <img src="assets/images/logo2x.png" alt="Cureskin Logo">
                         </a>
                     </div>
+                    <div class="mobileMenu" id="mobileicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="col-sm-8 col-md-8 col-lg-8">
-                    <nav class="topMenu">
-                        <ul class="mainMenu">
-                            <li class="menuItem"><a href="javascript:;">How we work</a></li>
-                            <li class="menuItem"><a href="javascript:;">Why us</a></li>
-                            <li class="menuItem"><a href="blog-v2.html">Blog</a></li>
-                            <li class="menuItem"><a href="javascript:;">Try on whatsapp</a></li>
-                            <li class="menuItem download"><a href="javascript:;">Download app now</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="menuWrapper">
+                        <a href="index.html" class="sidelogo">
+                            <img src="assets/images/logo2x.png" alt="Cureskin Logo">
+                        </a>
+                        <a href="javascript:;" class="crossbtn" id="mobilecross"><i class="fa fa-close"></i></a>
+                        <nav class="topMenu">
+                            <ul class="mainMenu">
+                                <li class="menuItem"><a href="javascript:;">How we work</a></li>
+                                <li class="menuItem"><a href="javascript:;">Why us</a></li>
+                                <li class="menuItem"><a href="blog-v2.html">Blog</a></li>
+                                <li class="menuItem"><a href="javascript:;">Try on whatsapp</a></li>
+                                <li class="menuItem download"><a href="javascript:;">Download app now</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>

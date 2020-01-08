@@ -1,14 +1,20 @@
 @media only screen and  (min-width: 1200px) {
 	
 }
+@media only screen and  (max-width: 1200px) {
+	.mainMenu li a {
+		font-size: 14px;
+	}
+	.mainMenu li.download > a {
+		padding: 10px 10px;
+	}
+}
 
 @media only screen and (max-width: 991px) {
 	.mobileMenu {
 		display: inline-block;
 	}
-	.topMenu{
-		/* display: none; */
-	}
+	
 	.siteHeader {
 		position: relative;
 		padding: 20px 0;
@@ -43,9 +49,6 @@
 	.crossbtn{
 		display: inline-block;
 	}
-	.container {
-		width: 100%;
-	}	
 	.mainMenu li a{
 		color: #2C2A6D;
 	}
@@ -57,11 +60,170 @@
 	.topMenu {
 		text-align: left;
 	}
+	.bannerContent {
+		padding-top: 20px;
+	}
+	.bannerContent h1,
+	.appContent h2,
+	.onesolution .solutionInfo h2,
+	.messageContent .messageTitle,
+	.happyfaces .happytitle,
+	.featured h2 {
+		font-size: 32px;
+		line-height: initial;
+		margin-bottom: 20px;
+	}
+	.bannerInfoText {
+		font-size: 17px;
+	}
+	.playStoreWrap a {
+		margin: 0;
+	}
+	.playStoreWrap img {
+		width: 125px;
+		height: auto;
+	}
+	.btnKnowMore  {
+		font-size: 14px;
+	}
+	.bannerImage img {
+		height: 650px;
+	}
+	.appWorks .appImage img {
+		width: auto;
+		height: 600px;
+		display: inline-block;
+		object-fit: contain;
+		object-position: top;
+	}
+	.onesolution .solutionInfo .infoText {
+		font-size: 16px;
+	}
+	.messageContent .messageText {
+		font-size: 16px;
+		font-weight: 300;
+		margin-bottom: 40px;
+		line-height: initial;
+		font-family: 'Red Hat Display', sans-serif;
+	}
+	.statistics .statsHeading {
+		font-size: 36px;
+		line-height: initial;
+	}
+	.statistics .statsText {
+		font-size: 20px;
+	}
+	.happyfaces {
+		padding: 60px 0 60px 0;
+	}
+	.happyfaces .supportText {
+		margin-bottom: 75px;
+		font-size: 18px;
+	}
+	.happyfaces .supportText br,
+	.videos .vbox h3 br {
+		display: none;
+	}
+	.happyfaces .happybox h3 {
+		margin-top: 15px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.happyfaces .happybox .happycontent {
+		font-size: 16px;
+		margin-top: 20px;
+		padding: 0px 5px 5px 5px;
+	}
+	.videos .vbox h3 {
+		font-size: 20px;
+		line-height: initial;
+	}
+	.downloadappnow {
+		padding: 10px 10px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	.iconlogo .iconbox {
+		margin-bottom: 30px;
+	}
+	.message .ownerImage img {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		object-position: top;
+	}		
+	.ownerImage {
+		position: absolute;
+		top: 80px;
+		left: 0;
+	}
+	.faqwrap .faqsidebar .sidebox {
+		max-height: initial;
+	}
+	.paginationList li {
+		list-style-type: none;
+		display: inline-block;
+		padding: 0 30px;
+	}
+	.paginationList li a .arrow {
+		padding: 0 20px;
+	}
+	.paginationList li a .prev,
+	.paginationList li a .next,
+	.paginationList li a .arrow {
+		font-size: 24px;
+	}
+	.innerBlogWrap .contentBlog {
+		padding-right: initial;
+	}
+
+	
+	
 }
 
 
 @media only screen and (max-width: 771px) {	
-	
+	.oneSolImageWrap .mainImage img {
+		height: 400px;
+	}
+	.bannerImage img {
+		height: 500px;
+	}
+	.skin {
+		font-size: 21px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.hair {
+		font-size: 21px;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		position: absolute;
+		top: -60px;
+		right: 0;
+		font-weight: normal;
+	}
+	.appWorks {
+		position: relative;
+		padding-top: 100px;
+	}
+	.onesolution {
+		padding: 120px 0 60px 0;	
+	}
+	.videos .vbox {
+		margin-bottom: 40px;
+	}
+	.happyfaces .fullcol {
+		margin-bottom: 50px;
+	}
+	.blogboxv2 {
+		margin-bottom: 40px;
+	}
+	.faqwrap .faqsidebar .sidebox {
+		max-height: initial;
+	}
 }
 
 
@@ -72,4 +234,83 @@
 	.mainMenu li a {
 		font-size: 16px;
 	}
+	.bannerContent h1, .appContent h2, .onesolution .solutionInfo h2, .messageContent .messageTitle, .happyfaces .happytitle, .featured h2 {
+		font-size: 21px;
+		line-height: initial;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	.bannerContent h1 br, .appContent h2 br, .onesolution .solutionInfo h2 br, .messageContent .messageTitle br, .happyfaces .happytitle br, .featured h2 br {
+		display: none
+	}
+	.appWorks .colfull {
+		width: 100%;
+	}
+	.appWorks .appImage img {
+		width: 100%;
+		height: 100%;
+	}
+	.onesolution  .colfull {
+		width: 100%;
+	}
+	.oneSolImageWrap .mainImage {
+		margin-top: 50px;
+	}
+	.hair {		
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		top: 0;
+		right: 15px;
+	}
+	.skin {
+		font-size: 21px;
+		width: 70px;
+		height: 70px;
+		top: 15px;
+		line-height: 70px;
+	}
+	.bannerImage img {
+		height: 100%;
+		width: 100%;
+	}
+	.onesolution .solutionInfo .infoText {
+		padding: initial;
+	}
+	.message .fullcol {
+		width: 100%;
+	}
+	.ownerImage {
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+	.message .ownerImage img {
+		height: 300px;
+		width: auto;
+		object-fit: contain;
+		object-position: top;
+		display: inline-block;
+	}
+	.statistics .statsHeading {
+		font-size: 24px;
+		line-height: initial;
+	}
+	.happyfaces .fullcol{
+		width: 100%;
+	}
+	.iconlogo .fullcol{
+		width: 100%;
+	}
+	.featuredlogo li {
+		border-right: none !important;
+	}
+	.footerlink li {
+		display: block;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	
 }
