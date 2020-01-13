@@ -176,7 +176,9 @@
 	.innerBlogWrap .contentBlog {
 		padding-right: initial;
 	}
-
+	.mainMenu li.download > a:hover {
+		color: #ffffff;
+	}
 	
 	
 }
@@ -312,5 +314,20 @@
 		padding: 0;
 		margin-bottom: 30px;
 	}
-	
+	.sidelogo img {
+		height: auto;
+		width: 100%;
+	}
+	.mainMenu li a {
+		font-size: 14px;
+	}
+	.mainMenu li.download > a {
+		font-size: 14px;
+	}
+	.mainMenu li.download > a:hover {
+		color: #ffffff;
+	}
+	.sidelogo {
+    	margin-top: 30px;
+	}
 }

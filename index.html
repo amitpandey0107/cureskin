@@ -47,7 +47,7 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/script.js"></script>
 
-    
+
 
 </head>
 
@@ -136,7 +136,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-sm-5 col md-5 col-lg-5 colfull">
-                    <div class="appImage">
+                    <div class="appImage" id="appImage">
                         <img src="assets/images/appwork2x.png" alt="App work">
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                                     recommend a skin care routine tailored to your skin needs and lifestyle.</p>
                             </div>
                         </div>
-                        <div class="steps" id="step3">
+                        <div class="steps" id="step4">
                             <div class="stepTitle">
                                 <sub>Step</sub>
                                 <div class="stepCount">4</div>
@@ -296,7 +296,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="happytitle">Stories of Transformation</h2>
-                    <p class="supportText">Here, supporting text would come. Get amazing skin just like thousands of our
+                    <p class="supportText"> Get amazing skin just like thousands of our
                         users. <br>Don't believe us? Have a look at what they say!</p>
                 </div>
                 <div class="col-sm-12">
@@ -304,8 +304,9 @@
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 flexcol fullcol">
                             <div class="happybox">
                                 <div class="happyWrap">
-                                    <img src="assets/images/before.png" alt="lady image">
+                                    <img src="assets/images/fwdimage/taranjeet_before.png" alt="lady image">
                                     <div class="effect"></div>
+                                    <img src="assets/images/fwdimage/taranjeet_after.png" alt="" class="afterImage">
                                 </div>
                                 <div class="beforeAfter">Before <i class="hline">|</i> <span>After</span></div>
                                 <h3>Taranjeet from Thane</h3>
@@ -319,8 +320,9 @@
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 flexcol fullcol">
                             <div class="happybox">
                                 <div class="happyWrap">
-                                    <img src="assets/images/before.png" alt="lady image">
+                                    <img src="assets/images/fwdimage/anjali_before.png" alt="lady image">
                                     <div class="effect"></div>
+                                    <img src="assets/images/fwdimage/anjali_after.png" alt="" class="afterImage">
                                 </div>
                                 <div class="beforeAfter">Before <i class="hline">|</i> <span>After</span></div>
                                 <h3>Anjali from Bangalore</h3>
@@ -336,8 +338,10 @@
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 flexcol fullcol">
                             <div class="happybox">
                                 <div class="happyWrap">
-                                    <img src="assets/images/before.png" alt="lady image">
+                                    <img src="assets/images/fwdimage/dhruvi_before.png" alt="lady image">
                                     <div class="effect"></div>
+                                    <img src="assets/images/fwdimage/dhruvi_after.png" alt="" class="afterImage">
+
                                 </div>
                                 <div class="beforeAfter">Before <i class="hline">|</i> <span>After</span></div>
                                 <h3>Dhruvi from Gujarat</h3>
@@ -375,12 +379,50 @@
                 </div>
                 <div class="col-sm-8">
                     <div class="videowrap">
-                        <img src="assets/images/Group68@2x.png" alt="videos">
+                        <div class="index-video-wrapper">
+                            <!-- <img src="assets/images/Group68@2x.png" alt="videos"> -->
+                            <video width="" height="" poster="assets/images/video_poster.png" controls id="index-video"
+                                controls="false">
+                                <source src="https://cureskin.com/wp-content/uploads/2020/01/videoplayback.mp4"
+                                    type="video/mp4">
+                                <source src="https://cureskin.com/wp-content/uploads/2020/01/videoplayback.ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        #index-video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -100;
+            right: 0;
+            bottom: 0;
+            background: url(../img/index-image.jpg) no-repeat center center;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .index-video-wrapper {
+            height: 100%;
+            width: 100%;
+            background: url(../img/index-image.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .index-video-wrapper video {
+            height: 100%;
+            width: 100%;
+        }
+
+        ::-webkit-media-controls {
+            visibility: hidden !important;
+        }
+    </style>
 
     <!-- =========================================
     Icons Logo
@@ -394,6 +436,12 @@
                             <img src="assets/images/ai2x.png" alt="Backed With AI">
                             <p>Backed With AI</p>
                         </div>
+                        <div class="flipcontent">
+                            <p>Cureskin is an AI-driven skin care app that detects skin problems through image
+                                recognition techniques. <br /> Your photo is analysed by our advanced "Instant Skin
+                                Check Technology" to provide you with a personalized skin-care regimen. </p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 fullcol">
@@ -401,6 +449,11 @@
                         <div class="iconwrap">
                             <img src="assets/images/secure2x.png" alt="Safe & Secure">
                             <p>Safe & Secure</p>
+                        </div>
+                        <div class="flipcontent">
+                            <p>CureSkin guarantees data privacy and confidentiality. Your data is private and meant only
+                                for the dermatologist assigned to you. We never compromise on quality and we know that
+                                you deserve the best. Our products are 100% safe and tested by dermatologists.</p>
                         </div>
                     </div>
                 </div>
@@ -410,6 +463,11 @@
                             <img src="assets/images/trusted2x.png" alt="Trusted by people">
                             <p>Trusted by people</p>
                         </div>
+                        <div class="flipcontent">
+                            <p>CureSkin takes your feedback seriously. Our users place their trust in us for a reason.
+                                We believe that promises should be kept up and we promise you to help you get better
+                                skin with expert dermatologists. </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 fullcol">
@@ -417,6 +475,9 @@
                         <div class="iconwrap">
                             <img src="assets/images/download2x.png" alt="1 Lakh+ Downloads">
                             <p>1 Lakh+ Downloads</p>
+                        </div>
+                        <div class="flipcontent">
+                            <p>Over 12 lakhs people have trusted us, and got the desired results.</p>
                         </div>
                     </div>
                 </div>
@@ -509,7 +570,43 @@
     </footer>
 
 
-    
+
 </body>
 
 </html>
+
+<script>
+jQuery(document).ready(function () {
+    jQuery('#step1').on('click', function() {
+        jQuery(this).addClass('active');
+        jQuery('#step2').removeClass('active');
+        jQuery('#step4').removeClass('active');
+        jQuery('#step3').removeClass('active');
+        jQuery('#appImage img').attr('src','https://cureskin.com/wp-content/uploads/2020/01/f.png');
+    })
+
+    jQuery('#step2').on('click', function() {
+        jQuery(this).addClass('active');
+        jQuery('#step1').removeClass('active');
+        jQuery('#step4').removeClass('active');
+        jQuery('#step3').removeClass('active');
+        jQuery('#appImage img').attr('src','https://cureskin.com/wp-content/uploads/2020/01/g-2.png');
+    })
+
+    jQuery('#step3').on('click', function() {
+        jQuery(this).addClass('active');
+        jQuery('#step1').removeClass('active');
+        jQuery('#step4').removeClass('active');
+        jQuery('#step2').removeClass('active');
+        jQuery('#appImage img').attr('src','https://cureskin.com/wp-content/uploads/2020/01/g-2.png');
+    })
+
+    jQuery('#step4').on('click', function() {
+        jQuery(this).addClass('active');
+        jQuery('#step1').removeClass('active');
+        jQuery('#step3').removeClass('active');
+        jQuery('#step2').removeClass('active');
+        jQuery('#appImage img').attr('src','https://cureskin.com/wp-content/uploads/2020/01/g-2.png');
+    })
+})
+</script>

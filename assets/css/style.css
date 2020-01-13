@@ -681,6 +681,24 @@ HAPPY FACES
 
 }
 
+
+
+.happyWrap .afterImage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 90;
+}
+
+.happyWrap:hover > .afterImage {
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
 /* ==================
 VIDEOS
 =================== */
@@ -771,11 +789,13 @@ Icon Logo
 .iconlogo{
     position: relative;
     padding: 60px 0;
+    transition: all 0.4s ease-in-out ;
 }
 .iconlogo .iconbox {
     height: 370px;    
     border: 1px solid #C3C3C3;
     text-align: center;
+    position: relative;
 }
 .iconlogo .iconbox:hover {
     box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.2);
@@ -796,6 +816,45 @@ Icon Logo
     font-size: 21px;
     margin-top: 20px;
     font-family: 'Red Hat Display', sans-serif;
+}
+.flipcontent {
+    background: #ccc;
+    font-size: 16px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+   visibility: hidden;
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease-in-out ;
+    top: 100%;
+    opacity: 0;
+    color: #000 !important;
+    font-size: 16px !important;
+}
+.flipcontent p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 15px;
+    color: #000 !important;
+    font-size: 16px !important;
+    
+
+}
+.iconbox:hover > .flipcontent {
+    visibility: visible;
+    opacity: 1;
+    top: 0%;
+    transition: all 0.4s ease-in-out ;
+    
 }
 
 /* ==================
