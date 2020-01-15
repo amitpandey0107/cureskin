@@ -34,6 +34,26 @@ jQuery(document).ready(function() {
 	        }
 	    }
 	})
+
+
+	// More Post Slider
+	jQuery('#moreposts').owlCarousel({
+	    loop:true,
+	    margin:36,
+	    nav:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	})
+
 $("#index-video").click(function() {
   //console.log(this); 
   if (this.paused) {
